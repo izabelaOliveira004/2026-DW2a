@@ -6,8 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="listar_postagem.php">Ver postagens</a>
-    <a href="cadastro_usuario.php">Cadastrar usuário</a>
-    <a href="loguin.php">Loguin</a>
+    <h1>Tela de trabalho</h1>
 </body>
 </html>
