@@ -8,11 +8,23 @@
 <body>
 <form action="salvar_usuario.php" method = "POST" >
 
+    Nome:
+    <input type="text" name="nome">
 
+    Apelido:
+    <input type="text" name="apelido">
 
+    Email:
+    <input type="text" name="email">
 
+    Senha:
+    <input type="text" name="senha">
 
-
+    Foto:
+    <input type="text" name="foto">
+    
+    <input type="submit" value="Cadastrar">
+    
 </form>
 </body>
 </html>
