@@ -10,6 +10,8 @@
 
     Coloque seu post aqui
     <input type="text" name = "texto"> <br> <br>
+    
+    <input type="submit" name = "enviar">
 
     <a href="home.php">Voltar</a>
     </form>

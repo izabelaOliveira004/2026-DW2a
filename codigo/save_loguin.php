@@ -1,4 +1,6 @@
 <?php
+
+session_start();
 require_once "conexao.php";
 
     $email = $_POST['email'];
@@ -7,6 +9,8 @@ require_once "conexao.php";
     $sql = "SELECT * FROM usuario where email = '$email' and senha = '$senha'";
 
     $execute = mysqli_query ($conexao, $sql);
+
+
 
     header("location: home.php");
 
