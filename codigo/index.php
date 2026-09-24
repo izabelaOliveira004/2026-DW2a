@@ -2,10 +2,6 @@
 require_once "conexao.php";
 
 session_start();
-$_SESSION['i']
-    if ($ =! 0){
-            header("location: home.php");
-        }
 
 
 ?>
