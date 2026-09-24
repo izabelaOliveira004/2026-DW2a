@@ -1,6 +1,3 @@
-<?php
-   // verificarLogin();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Tela de trabalho</h1>
+    <form action="salvar_postagem.php" method = "POST">
 
-    <a href="listar_postagem.php">Post</a> <br>     
-    <a href="cad_postagem.php">Escreva seu post</a>
+    Coloque seu post aqui
+    <input type="text" name = "texto"> <br> <br>
+
+    <a href="home.php">Voltar</a>
+    </form>
 </body>
 </html>

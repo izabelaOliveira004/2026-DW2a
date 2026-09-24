@@ -1,6 +1,6 @@
 <?php
-//session_star();
 
+   // session_star();
 require_once "conexao.php";
 
 
@@ -13,5 +13,15 @@ function loguin($conexao, $email, $senha){
 
     exit;
 }  
+
+
+function verificarLogin()
+{
+    // return isset($_SESSION['usuario']);
+    if (!isset($_SESSION['usuarios_id'])) {
+        header("Location: login.php");
+        exit;
+    }
+}
 
 ?>

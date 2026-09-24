@@ -1,3 +1,15 @@
+<?php
+require_once "conexao.php";
+
+session_start();
+$_SESSION['i']
+    if ($ =! 0){
+            header("location: home.php");
+        }
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +18,6 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <a href="listar_postagem.php">Ver postagens</a> <br>
 
     <a href="cadastro_usuario.php">Cadastrar usuário</a> <br>
 

@@ -1,24 +1,7 @@
 <?php 
     session_start();
     require_once "conexao.php";
-    require_once "funcao.php";
 
-    if(isset($_POST['enviar'])){
-
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
-
-        $resultado = loguin($conexao, $email, $senha);
-
-        if ($resultado =! 0){
-
-            header("location: home.php");
-        }
-
-        else{
-            echo "Erro usuario não encontrado";
-        }
-    }
 ?>
 
 <!DOCTYPE html>
@@ -29,14 +12,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method = "POST">
+    <form action="save_loguin.php" method = "POST">
 
     Email: <br>
     <input type="text" name = "email"> <br><br>
     Senha: <br>
     <input type="text" name = "senha"> <br><br>
 
-    <input type="submit" value= "enviar">
+    <input type="submit" value= "entrar">
 
     </form>
 </body>
