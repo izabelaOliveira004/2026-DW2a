@@ -36,7 +36,7 @@
     Senha: <br>
     <input type="text" name = "senha"> <br><br>
 
-    <input type="submit" name = "enviar">
+    <input type="submit" value= "enviar">
 
     </form>
 </body>
