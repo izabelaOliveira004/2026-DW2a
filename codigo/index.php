@@ -6,8 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="listar_postagem.php">Ver postagens</a>
-    <a href="cadastro_usuario.php">Cadastrar usuário</a>
-    <a href="loguin.php">Loguin</a>
+    
+    <a href="listar_postagem.php">Ver postagens</a> <br>
+
+    <a href="cadastro_usuario.php">Cadastrar usuário</a> <br>
+
+    <a href="loguin.php">Loguin</a> <br>
+
 </body>
 </html>
