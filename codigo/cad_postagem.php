@@ -9,9 +9,9 @@
     <form action="salvar_postagem.php" method = "POST">
 
     Coloque seu post aqui
-    <input type="text" name = "texto"> <br> <br>
+    <input type="text" name = "texto"> <br><br>
     
-    <input type="submit" name = "enviar">
+    <input type="submit" value = "enviar">
 
     <a href="home.php">Voltar</a>
     </form>
