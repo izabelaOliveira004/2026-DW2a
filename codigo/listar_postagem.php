@@ -36,9 +36,9 @@
 
         $sql = "SELECT * FROM postagem";
 
-        $resultados = mysqli_query($conexao, $sql);
+        $resultado = mysqli_query($conexao, $sql);
 
-        while ($linha = mysqli_fetch_array($resultados)) {
+        while ($linha = mysqli_fetch_array($resultado)) {
             $idpostagem = $linha['idpostagem'];
             $texto = $linha['texto'];
             $data_hora = $linha['data_hora'];
@@ -63,15 +63,15 @@
 
             //caixa dos comentarios
             $sql3 = "SELECT * FROM comentario WHERE idpostagem = $idpostagem";
-            $comentarios = mysqli_query($conexao, $sql3);
+            $comentario = mysqli_query($conexao, $sql3);
 
-            if (mysqli_num_rows($comentarios) == 0) {
+            if (mysqli_num_rows($comentario) == 0) {
                 echo "Essa postagem não possui comentários.";
             } else {
                 echo "<div class='comentarios'>";
                 // listar comentários aqui
 
-                while ($comentario = mysqli_fetch_array($comentarios)) {
+                while ($comentario = mysqli_fetch_array($comentario)) {
                     $idusuario_comentario = $comentario['idusuario'];
                     $texto_comentario = $comentario['texto'];
 
